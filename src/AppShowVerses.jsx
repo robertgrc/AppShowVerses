@@ -4,7 +4,7 @@ import { GifGrid } from './components/GifGrid'
 
 export const AppShowVerses = () => {
 
-const [categories, setCategories] = useState(['fear of God','seed of god', 'Mesias'])
+const [categories, setCategories] = useState(['king'])
 
 const onAddCategory=( newCategory)=>{
    
@@ -22,8 +22,7 @@ const onAddCategory=( newCategory)=>{
             {categories.map(category => 
             <GifGrid  
                 key={category} 
-                category={category}
-            />
+                category={category} />
         )
             }
     </>
